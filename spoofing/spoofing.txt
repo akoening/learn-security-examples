@@ -1,1 +1,6 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+If an attacker steals the session ID by accessing the cookie value, they can then use it to access an authenticated session as that user without having to log in (session hijacking).
+In a CSRF, they only need the client to open up a malicious html page to send a post request to the vulnerable server using the session ID. 
+The secure version prevents this by preventing cookies from being read programmatically and limiting the cookie so that it can only be sent to the server and no other endpoints. 
+The secure implementation also hashes the session secret and requires HTTP. 
+Spoofing violates the Confidentiality property of the CIA triad.

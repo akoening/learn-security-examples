@@ -1,3 +1,7 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+The insecure server is vulnerable to a SQL injection which allows an attacker to pass in a SQL command as a parameter and dump information from the database, resulting in an info disclosure.
+The secure version of the server prevents this by checking to make sure that the user input is a string and then sanitizing it to remove any special characters that might be part of a SQL command.
 Which CIA property does tampering violate?
+Confidentiality and potentially Integrity if the attacker sends a command to delete or change something in the database.
 What additional security mechanisms can you incorporate?
+Encrypting data that is stored in the database, so that even if it is accessed it can't be read.

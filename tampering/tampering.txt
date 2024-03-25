@@ -1,0 +1,5 @@
+Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+Cross-site scripting (XSS) is when an attacker injects a script into an application, changing its functionality and potentially gaining access to a user's sensitve information. 
+The secure version of this server prevents this by sanitizing the user input so that it can't be executed as HTML or JS on the website.
+
+These tampering attacks violate the Integrity property of the CIA triad.
