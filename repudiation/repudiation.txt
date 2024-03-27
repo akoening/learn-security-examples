@@ -1,2 +1,6 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
+Non-repudiation refers to an inability by a system to attribute actions on a system to a specific user. This is often because of a lack of log files or audit policies.
+The secure version prevents this by using a log stream to record some message whenever an endpoint is hit that includes either the username or source IP.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+Prevent logs from being edited by just anyone. Policies on auditing these logs are also important, including automatic log analysis.
+You could also implement the same measures you would take to prevent spoofing, because if an attacker spoofs another user, their actions would look like they're coming from that user.

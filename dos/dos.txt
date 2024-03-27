@@ -1,2 +1,5 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+A denial of service attack is one that prevents clients from accessing a server/resource by crashing the server by exploiting a vulnerability or overwhelming it with too many requests.
+The secure version of this server prevents this by using a try/catch statement to handle bad inputs. 
 - What additional security mechanisms can you incorporate to prevent such attacks?
+Rate-limiting, input sanitizing, load-balancing to handle high traffic loads (implemented through a firewall or a Content Delivery Network).

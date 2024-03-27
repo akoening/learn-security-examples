@@ -1,0 +1,4 @@
+Privilege escalation is the absence of authorization or a weakness in implementation that leads to granting acces to resources or actions beyond the intended level of authorization.
+The secure code prevents this by using a session for each authentication so that if a user has logged in before, the session is set. 
+Additional security mechanisms to deploy to prevent this vulnerability should be things to prevent session spoofing like setting cookies to HTTP only and preventing cross-site requests by expliciting setting sameSide to "true".
+If the session is leaked, this can still lead to spoofing. One way to prevent this is to use tokens/2FA. 
